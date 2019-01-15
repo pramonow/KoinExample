@@ -2,6 +2,7 @@ package pramonow.com.koinexample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +16,8 @@ class MainActivity : AppCompatActivity() {
 
         koinService.startThings()
         mockKoin.stopThings()
+
+        val constructorInject:ConstructorInject = get()
+        constructorInject.askKoinStart()
     }
 }

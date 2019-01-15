@@ -8,7 +8,8 @@ import org.koin.dsl.module.module
 
 val appModule = module{
     single{ RealKoin(get()) as KoinInterface }
-    single{ MockKoin(get())}
+    single{ MockKoin()}
+    single{ ConstructorInject(get())}
 }
 
 class ApplicationWrapper : Application() {
