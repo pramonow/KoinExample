@@ -3,14 +3,14 @@ package pramonow.com.koinexample
 import android.content.Context
 import android.util.Log
 
-class RealKoin(context: Context):KoinInterface{
+class KoinParamClass(context: Context):KoinInterface{
 
     override fun stopThings() {
-        Log.d("baniman", "real stop")
+        Log.d("KOINCLASS", "KOIN PARAM STOP")
     }
 
     override fun startThings() {
-        Log.d("baniman", "real start")
+        Log.d("KOINCLASS", "KOIN PARAM START")
     }
 
 }

@@ -1,16 +1,15 @@
 package pramonow.com.koinexample
 
-import android.content.Context
 import android.util.Log
 
-class MockKoin:KoinInterface{
+class KoinClass:KoinInterface{
 
     override fun startThings() {
-        Log.d("baniman", "start")
+        Log.d("KOINCLASS", "KOIN START")
     }
 
     override fun stopThings() {
-        Log.d("baniman","stop")
+        Log.d("KOINCLASS","KOIN STOP")
     }
 
 }
